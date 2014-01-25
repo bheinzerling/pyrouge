@@ -107,7 +107,7 @@ Running any of these with the ```-h``` option will display a usage message expla
 
 ## Installation
 
-Instruction on installing ROUGE can be found [here](http://jpbalb.in/post/42675198985/figuring-out-rouge).
+Instructions on installing ROUGE can be found [here](http://jpbalb.in/post/42675198985/figuring-out-rouge).
 
 Depending on your system, you might have to run the following commands as root.
 
