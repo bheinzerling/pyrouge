@@ -1,0 +1,61 @@
+<ROUGE-EVAL version="1.55">
+	<EVAL ID="1">
+		<MODEL-ROOT>data/models2</MODEL-ROOT>
+		<PEER-ROOT>data/systems2</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="1">D30001.M.100.T.A</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">D30001.M.100.T.B</M>
+			<M ID="B">D30001.M.100.T.C</M>
+			<M ID="C">D30001.M.100.T.D</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="2">
+		<MODEL-ROOT>data/models2</MODEL-ROOT>
+		<PEER-ROOT>data/systems2</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="1">D30002.M.100.T.A</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">D30002.M.100.T.B</M>
+			<M ID="B">D30002.M.100.T.C</M>
+			<M ID="C">D30002.M.100.T.E</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="3">
+		<MODEL-ROOT>data/models2</MODEL-ROOT>
+		<PEER-ROOT>data/systems2</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="1">D30003.M.100.T.A</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">D30003.M.100.T.B</M>
+			<M ID="B">D30003.M.100.T.C</M>
+			<M ID="C">D30003.M.100.T.F</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="4">
+		<MODEL-ROOT>data/models2</MODEL-ROOT>
+		<PEER-ROOT>data/systems2</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="1">D30005.M.100.T.A</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">D30005.M.100.T.B</M>
+			<M ID="B">D30005.M.100.T.C</M>
+			<M ID="C">D30005.M.100.T.G</M>
+		</MODELS>
+	</EVAL>
+</ROUGE-EVAL>

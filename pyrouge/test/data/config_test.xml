@@ -1,0 +1,401 @@
+<ROUGE-EVAL version="1.55">
+	<EVAL ID="1">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-01.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-01.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-01.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-01.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-01.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="2">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-02.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-02.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-02.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-02.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-02.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="3">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-03.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-03.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-03.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-03.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-03.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="4">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-04.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-04.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-04.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-04.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-04.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="5">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-05.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-05.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-05.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-05.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-05.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="6">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-06.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-06.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-06.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-06.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-06.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="7">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-07.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-07.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-07.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-07.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-07.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="8">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-08.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-08.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-08.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-08.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-08.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="9">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-09.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-09.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-09.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-09.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-09.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="10">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-10.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-10.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-10.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-10.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-10.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="11">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-11.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-11.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-11.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-11.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-11.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="12">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-12.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-12.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-12.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-12.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-12.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="13">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-13.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-13.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-13.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-13.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-13.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="14">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-14.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-14.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-14.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-14.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-14.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="15">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-15.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-15.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-15.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-15.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-15.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="16">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-16.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-16.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-16.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-16.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-16.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="17">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-17.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-17.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-17.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-17.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-17.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="18">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-18.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-18.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-18.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-18.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-18.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="19">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-19.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-19.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-19.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-19.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-19.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="20">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-20.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-20.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-20.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-20.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-20.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="21">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-21.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-21.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-21.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-21.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-21.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="22">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-22.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-22.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-22.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-22.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-22.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="23">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-23.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-23.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-23.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-23.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-23.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="24">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-24.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-24.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-24.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-24.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-24.html</M>
+		</MODELS>
+	</EVAL>
+
+	<EVAL ID="25">
+		<MODEL-ROOT>data/models</MODEL-ROOT>
+		<PEER-ROOT>data/systems</PEER-ROOT>
+		<INPUT-FORMAT TYPE="SPL">
+		</INPUT-FORMAT>
+		<PEERS>
+			<P ID="None">SL.P.10.R.11.SL062003-25.html</P>
+		</PEERS>
+		<MODELS>
+			<M ID="A">SL.P.10.R.A.SL062003-25.html</M>
+			<M ID="B">SL.P.10.R.B.SL062003-25.html</M>
+			<M ID="C">SL.P.10.R.C.SL062003-25.html</M>
+			<M ID="D">SL.P.10.R.D.SL062003-25.html</M>
+		</MODELS>
+	</EVAL>
+</ROUGE-EVAL>

@@ -1,2 +1,1 @@
-from base import Doc, Sent
-from rouge import Rouge155
+from pyrouge.Rouge155 import Rouge155
