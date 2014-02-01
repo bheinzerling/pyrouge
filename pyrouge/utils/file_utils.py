@@ -75,3 +75,12 @@ def list_files(dir_path, recursive=True):
                 dir = os.path.join(root, dir)
                 file_list.extend(list_files(dir, recursive=True))
         return file_list
+
+def verify_dir(path, name=None):
+    if name:
+        name_str = "Cannot set {} directory because t".format(name)
+    else:
+        name_str = "T"
+    msg = "{}he path {} does not exist.".format(name_str, path)
+    if not os.path.exists(path):
+        raise Exception(msg)

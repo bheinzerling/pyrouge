@@ -17,6 +17,7 @@ except ImportError:
 
 from pyrouge.utils import log
 from pyrouge.utils.file_utils import DirectoryProcessor
+from pyrouge.utils.file_utils import verify_dir
 
 
 class Rouge155(object):
@@ -85,8 +86,7 @@ class Rouge155(object):
         self.log = log.get_global_console_logger()
         self.__set_dir_properties()
         self._config_file = None
-        self._settings_file = os.path.join(
-            os.path.dirname(__file__), 'settings.ini')
+        self._settings_file = self.__get_config_path()
         self.__set_rouge_dir(rouge_dir)
         self.args = self.__clean_rouge_args(rouge_args)
         self._system_filename_pattern = None
@@ -171,7 +171,7 @@ class Rouge155(object):
     @config_file.setter
     def config_file(self, path):
         config_dir, _ = os.path.split(path)
-        self.__verify_dir(config_dir, "configuration file")
+        verify_dir(config_dir, "configuration file")
         self._config_file = path
 
     def split_sentences(self):
@@ -309,7 +309,7 @@ class Rouge155(object):
             config_filename = "rouge_conf.xml"
         else:
             config_dir, config_filename = os.path.split(config_file_path)
-            self.__verify_dir(config_dir, "configuration file")
+            verify_dir(config_dir, "configuration file")
         self._config_file = os.path.join(self._config_dir, config_filename)
         Rouge155.write_config_static(
             self._system_dir, self._system_filename_pattern,
@@ -391,6 +391,7 @@ class Rouge155(object):
                 results["{}_ce".format(key)] = float(conf_end)
         return results
 
+    ###################################################################
     # Private methods
 
     def __set_rouge_dir(self, home_dir=None):
@@ -411,12 +412,6 @@ class Rouge155(object):
                 "ROUGE binary not found at {}. Please set the "
                 "correct path by running pyrouge_set_rouge_path "
                 "/path/to/rouge/home.".format(self._bin_path))
-
-    def __verify_dir(self, path, name):
-        if not os.path.exists(path):
-            raise Exception(
-                "Cannot set {} directory because the path {} "
-                "does not exist.".format(name, path))
 
     def __get_rouge_home_dir_from_settings(self):
         config = ConfigParser()
@@ -527,7 +522,6 @@ class Rouge155(object):
                 '-r', 1000,
                 '-n', 4,
                 '-w', 1.2,
-                '-l', 10,
                 '-a',
                 ]
             options = list(map(str, options))
@@ -548,7 +542,7 @@ class Rouge155(object):
             return getattr(self, private_name)
 
         def fset(self, path):
-            self.__verify_dir(path, dir_name)
+            verify_dir(path, dir_name)
             setattr(self, private_name, path)
 
         p = property(fget=fget, fset=fset, doc=docstring)
@@ -585,6 +579,20 @@ class Rouge155(object):
 
     def __add_config_option(self, options):
         return options + ['-m'] + [self._config_file]
+
+    def __get_config_path(self):
+        parent_dir = (
+            # Win
+            os.getenv("APPDATA") or
+            # Unix
+            os.path.expanduser("~") or
+            # fallback
+            os.path.dirname(__file__))
+        if not os.path.exists(parent_dir):
+            os.makedirs(parent_dir)
+        config_dir = os.path.join(parent_dir, ".pyrouge")
+        return os.path.join(config_dir, 'settings.ini')
+
 
 if __name__ == "__main__":
     import argparse

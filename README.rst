@@ -113,7 +113,7 @@ be runnable from anywhere on your system:
 
 ::
 
-    pyrouge_evaluate_plain_text_files.py -s systems_plain/ -sfp "some_name.(\d+).txt" -m models_plain/ -mfp some_name.[A-Z].#ID#.txt
+    pyrouge_evaluate_plain_text_files -s systems_plain/ -sfp "some_name.(\d+).txt" -m models_plain/ -mfp some_name.[A-Z].#ID#.txt
 
 -  **pyrouge\_evaluate\_rouge\_format\_files.py** gets you ROUGE scores
    for summaries already converted to ROUGE format. Example usage for
@@ -121,7 +121,7 @@ be runnable from anywhere on your system:
 
 ::
 
-    pyrouge_evaluate_rouge_format_files.py -s systems -sfp "SL.P.10.R.11.SL062003-(\d+).html" -m models -mfp SL.P.10.R.[A-Z].SL062003-#ID#.html
+    pyrouge_evaluate_rouge_format_files -s systems -sfp "SL.P.10.R.11.SL062003-(\d+).html" -m models -mfp SL.P.10.R.[A-Z].SL062003-#ID#.html
 
 Note that the system filename pattern is enclosed in quotation marks
 because it contains special characters.
@@ -134,14 +134,14 @@ because it contains special characters.
 
 ::
 
-    pyrouge_convert_plain_text_to_rouge_format.py -i models_plain/ -o models_rouge
+    pyrouge_convert_plain_text_to_rouge_format -i models_plain/ -o models_rouge
 
 -  **pyrouge\_write\_config\_file.py** creates a configuration file you
    can use to run ROUGE on your own. Example:
 
 ::
 
-    pyrouge_write_config_file.py -s systems -sfp "SL.P.10.R.11.SL062003-(\d+).html" -m models -mfp SL.P.10.R.[A-Z].SL062003-#ID#.html -c sl2003_config.xml
+    pyrouge_write_config_file -s systems -sfp "SL.P.10.R.11.SL062003-(\d+).html" -m models -mfp SL.P.10.R.[A-Z].SL062003-#ID#.html -c sl2003_config.xml
 
 Running any of these with the ``-h`` option will display a usage message
 explaining the various command line options.
@@ -166,7 +166,7 @@ path with this command:
 
 ::
 
-    pyrouge_set_rouge_path.py /absolute/path/to/ROUGE-1.5.5/directory
+    pyrouge_set_rouge_path /absolute/path/to/ROUGE-1.5.5/directory
 
 To test if everything is installed correctly, run:
 
@@ -178,7 +178,7 @@ If everything works, you should see something like:
 
 ::
 
-    Ran 10 tests in 3.753s
+    Ran 10 tests in 18.055s
 
     OK
 

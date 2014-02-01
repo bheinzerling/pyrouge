@@ -104,7 +104,7 @@ class PyrougeTest(unittest.TestCase):
             output_dir = mkdtemp()
             target_dir = add_data_path("SL2003_models_plain_text")
             command = (
-                "pyrouge_convert_rouge_format_to_plain_text.py "
+                "pyrouge_convert_rouge_format_to_plain_text "
                 "-i {} -o {}".format(input_dir, output_dir))
             check_output(command.split())
             filenames = os.listdir(input_dir)
@@ -122,7 +122,7 @@ class PyrougeTest(unittest.TestCase):
         output_dir = mkdtemp()
         target_dir = add_data_path("SL2003_models_rouge_format")
         command = (
-            "pyrouge_convert_plain_text_to_rouge_format.py -i {} -o {}".format(
+            "pyrouge_convert_plain_text_to_rouge_format -i {} -o {}".format(
                 input_dir, output_dir))
         check_output(command.split())
         filenames = os.listdir(input_dir)
@@ -157,7 +157,7 @@ class PyrougeTest(unittest.TestCase):
         pyrouge_output = rouge.evaluate(system_id=11).strip()
         rouge_command = (
             "{bin} -e {data} -c 95 -2 -1 -U -r 1000 -n 4 -w 1.2 "
-            "-l 10 -a -m {xml}".format(
+            "-a -m {xml}".format(
                 bin=rouge.bin_path,
                 data=rouge.data_dir,
                 xml=add_data_path("ROUGE-test_11.xml")))
@@ -168,7 +168,7 @@ class PyrougeTest(unittest.TestCase):
         model_dir = add_data_path("models_plain")
         system_dir = add_data_path("systems_plain")
         pyrouge_command = (
-            "pyrouge_evaluate_plain_text_files.py -m {} -s {} -sfp "
+            "pyrouge_evaluate_plain_text_files -m {} -s {} -sfp "
             "D(\d+).M.100.T.A -mfp D#ID#.M.100.T.[A-Z] -id 1".format(
                 model_dir, system_dir))
         pyrouge_output = check_output_clean(pyrouge_command.split())
@@ -176,7 +176,7 @@ class PyrougeTest(unittest.TestCase):
         config_file = add_data_path("config_test2.xml")
         rouge_command = (
             "{bin} -e {data} -c 95 -2 -1 -U -r 1000 -n 4 -w 1.2 "
-            "-l 10 -a -m {xml}".format(
+            "-a -m {xml}".format(
                 bin=rouge.bin_path,
                 data=rouge.data_dir,
                 xml=config_file))
@@ -212,14 +212,14 @@ class PyrougeTest(unittest.TestCase):
 
         command_part2 = [
             "\"-e {data} -c 90 -2 -1 -U -r 1000 -n 2 -w 1.2 "
-            "-l 10 -a -m {xml}\"".format(
+            "-a -m {xml}\"".format(
                 data=rouge.data_dir, xml=config_file)]
 
         pyrouge_command = command_part1.split() + command_part2
         pyrouge_output = check_output_clean(pyrouge_command)
         rouge_command = (
             "{bin} -e {data} -c 90 -2 -1 -U -r 1000 -n 2 -w 1.2 "
-            "-l 10 -a -m {xml}".format(
+            "-a -m {xml}".format(
                 bin=rouge.bin_path, data=rouge.data_dir, xml=config_file))
         orig_rouge_output = check_output_clean(rouge_command.split())
         self.assertEqual(pyrouge_output, orig_rouge_output)
