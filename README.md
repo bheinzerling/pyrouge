@@ -73,13 +73,13 @@ Using pyrouge from the command line
 
 If you prefer the command line to Python and the pyrouge module, you can use the following scripts, which are automatically installed and should be runnable from anywhere on your system:
 
--   **pyrouge\_evaluate\_plain\_text\_files.py** gets you ROUGE scores for your plain text summaries. Example:
+-   **pyrouge\_evaluate\_plain\_text\_files** gets you ROUGE scores for your plain text summaries. Example:
 
 <!-- -->
 
     pyrouge_evaluate_plain_text_files -s systems_plain/ -sfp "some_name.(\d+).txt" -m models_plain/ -mfp some_name.[A-Z].#ID#.txt
 
--   **pyrouge\_evaluate\_rouge\_format\_files.py** gets you ROUGE scores for summaries already converted to ROUGE format. Example usage for the `sample-test/SL2003` data that comes with ROUGE:
+-   **pyrouge\_evaluate\_rouge\_format\_files** gets you ROUGE scores for summaries already converted to ROUGE format. Example usage for the `sample-test/SL2003` data that comes with ROUGE:
 
 <!-- -->
 
@@ -87,13 +87,13 @@ If you prefer the command line to Python and the pyrouge module, you can use the
 
 Note that the system filename pattern is enclosed in quotation marks because it contains special characters.
 
--   **pyrouge\_convert\_plain\_text\_to\_rouge\_format.py** converts plain text files into a format ROUGE understands. If your plain text files do not contain one sentence per line, this script can also split sentences, provided you have nltk and its Punkt sentence splitter installed. Example:
+-   **pyrouge\_convert\_plain\_text\_to\_rouge\_format** converts plain text files into a format ROUGE understands. If your plain text files do not contain one sentence per line, this script can also split sentences, provided you have nltk and its Punkt sentence splitter installed. Example:
 
 <!-- -->
 
     pyrouge_convert_plain_text_to_rouge_format -i models_plain/ -o models_rouge
 
--   **pyrouge\_write\_config\_file.py** creates a configuration file you can use to run ROUGE on your own. Example:
+-   **pyrouge\_write\_config\_file** creates a configuration file you can use to run ROUGE on your own. Example:
 
 <!-- -->
 
