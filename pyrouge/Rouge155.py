@@ -5,6 +5,7 @@ import sys
 import re
 import codecs
 import argparse
+import platform
 
 from subprocess import check_output
 from tempfile import mkdtemp
@@ -39,12 +40,11 @@ class Rouge155(object):
     # matches the document ID.
     rouge.system_filename_pattern = 'SL.P.10.R.11.SL062003-(\d+).html'
 
-    # The model filename pattern should has to '#ID#' as a
-    # placeholder for the document ID. If there are multiple model
-    # summaries, pyrouge will use the provided regex to
-    # automatically match them with the corresponding system
-    # summary. Here, [A-Z] matches multiple model summaries for
-    # a given #ID#.
+    # The model filename pattern has '#ID#' as a placeholder for the
+    # document ID. If there are multiple model summaries, pyrouge
+    # will use the provided regex to automatically match them with
+    # the corresponding system summary. Here, [A-Z] matches 
+    # multiple model summaries for a given #ID#.
     rouge.model_filename_pattern = 'SL.P.10.R.[A-Z].SL062003-#ID#.html'
 
     rouge_output = rouge.evaluate()
@@ -581,16 +581,18 @@ class Rouge155(object):
         return options + ['-m'] + [self._config_file]
 
     def __get_config_path(self):
-        parent_dir = (
-            # Win
-            os.getenv("APPDATA") or
-            # Unix
-            os.path.expanduser("~") or
-            # fallback
-            os.path.dirname(__file__))
-        if not os.path.exists(parent_dir):
-            os.makedirs(parent_dir)
-        config_dir = os.path.join(parent_dir, ".pyrouge")
+        if platform.system() == "Windows":
+            parent_dir = os.getenv("APPDATA")
+            config_dir_name = "pyrouge"
+        elif os.name == "posix":
+            parent_dir = os.path.expanduser("~")
+            config_dir_name = ".pyrouge"
+        else:
+            parent_dir = os.path.dirname(__file__)
+            config_dir_name = ""
+        config_dir = os.path.join(parent_dir, config_dir_name)
+        if not os.path.exists(config_dir):
+            os.makedirs(config_dir)
         return os.path.join(config_dir, 'settings.ini')
 
 
