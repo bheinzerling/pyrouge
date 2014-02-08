@@ -2,7 +2,6 @@ from __future__ import print_function, unicode_literals, division
 
 import unittest
 import os
-import sys
 import re
 
 from subprocess import check_output

@@ -10,7 +10,7 @@ script_files = [os.path.join('bin', s) for s in os.listdir('bin')]
 
 setup(
     name='pyrouge',
-    version='0.1.1',
+    version='0.1.2',
     author='Benjamin Heinzerling, Anders Johannsen',
     author_email='benjamin.heinzerling@h-its.org',
     packages=['pyrouge', 'pyrouge.utils', 'pyrouge.tests'],

@@ -42,7 +42,7 @@ class PunktSentenceSplitter:
     @staticmethod
     def split_files(input_dir, output_dir, lang="en", punkt_data_path=None):
         ss = PunktSentenceSplitter(lang, punkt_data_path)
-        DirectoryProcessor.process(inputdir, outputdir, ss.split)
+        DirectoryProcessor.process(input_dir, output_dir, ss.split)
 
 if __name__ == '__main__':
     text = "Punkt knows that the periods in Mr. Smith and Johann S. Bach do "

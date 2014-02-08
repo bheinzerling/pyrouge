@@ -1,10 +1,8 @@
 from __future__ import print_function, unicode_literals, division
 
 import os
-import sys
 import re
 import codecs
-import argparse
 import platform
 
 from subprocess import check_output
@@ -43,7 +41,7 @@ class Rouge155(object):
     # The model filename pattern has '#ID#' as a placeholder for the
     # document ID. If there are multiple model summaries, pyrouge
     # will use the provided regex to automatically match them with
-    # the corresponding system summary. Here, [A-Z] matches 
+    # the corresponding system summary. Here, [A-Z] matches
     # multiple model summaries for a given #ID#.
     rouge.model_filename_pattern = 'SL.P.10.R.[A-Z].SL062003-#ID#.html'
 

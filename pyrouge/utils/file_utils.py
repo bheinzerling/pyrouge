@@ -76,6 +76,7 @@ def list_files(dir_path, recursive=True):
                 file_list.extend(list_files(dir, recursive=True))
         return file_list
 
+
 def verify_dir(path, name=None):
     if name:
         name_str = "Cannot set {} directory because t".format(name)
