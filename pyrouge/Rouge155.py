@@ -449,7 +449,7 @@ class Rouge155(object):
     <EVAL ID="{task_id}">
         <MODEL-ROOT>{model_root}</MODEL-ROOT>
         <PEER-ROOT>{peer_root}</PEER-ROOT>
-        <INPUT-FORMAT TYPE="SPL">
+        <INPUT-FORMAT TYPE="SEE">
         </INPUT-FORMAT>
         <PEERS>
             {peer_elems}
