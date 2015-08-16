@@ -10,7 +10,7 @@ automatically generating the ROUGE configuration file.
 Usage Examples
 --------------
 
-I have summarizations in plain text format and want to get the ROUGE scores
+I have summaries in plain text format and want to get the ROUGE scores
 ===========================================================================
 
 You can evaluate your plain text summaries like this:
