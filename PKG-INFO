@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: pyrouge
-Version: 0.1.2
+Version: 0.1.3
 Summary: A Python wrapper for the ROUGE summarization evaluation package.
 Home-page: https://github.com/noutenki/pyrouge
 Author: Benjamin Heinzerling, Anders Johannsen
