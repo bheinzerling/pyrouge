@@ -71,7 +71,7 @@ class Rouge155(object):
 
     """
 
-    def __init__(self, rouge_dir=None, rouge_args=None):
+    def __init__(self, rouge_dir=None, rouge_args=None, log_level=None):
         """
         Create a Rouge155 object.
 
@@ -81,7 +81,10 @@ class Rouge155(object):
                         arguments.
 
         """
-        self.log = log.get_global_console_logger()
+        if log_level is None:
+                self.log = log.get_global_console_logger()
+        else:
+                self.log = log.get_global_console_logger(log_level)		
         self.__set_dir_properties()
         self._config_file = None
         self._settings_file = self.__get_config_path()
