@@ -168,6 +168,13 @@ path with this command:
 
     pyrouge_set_rouge_path /absolute/path/to/ROUGE-1.5.5/directory
 
+
+If saving the rouge path using this script doesn't work on your system, you can also supply the rouge path at runtime:
+
+::
+
+    r = Rouge155('/absolute/path/to/ROUGE-1.5.5/directory') 
+
 To test if everything is installed correctly, run:
 
 ::
