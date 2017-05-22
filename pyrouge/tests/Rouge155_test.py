@@ -189,7 +189,7 @@ class PyrougeTest(unittest.TestCase):
         model_filename_pattern = "SL.P.10.R.[A-D].SL062003-#ID#.html"
         config_file = os.path.join(mkdtemp(), "config_test.xml")
         command = (
-            "pyrouge_write_config_file.py -m {m} -s {s} "
+            "pyrouge_write_config_file -m {m} -s {s} "
             "-mfp {mfp} -sfp {sfp} -c {c}".format(
                 m=model_dir, s=system_dir,
                 mfp=model_filename_pattern, sfp=system_filename_pattern,
@@ -205,7 +205,7 @@ class PyrougeTest(unittest.TestCase):
         system_dir = add_data_path("systems_plain")
         config_file = add_data_path("config_test2.xml")
         command_part1 = (
-            "pyrouge_evaluate_plain_text_files.py -m {} -s {} -sfp "
+            "pyrouge_evaluate_plain_text_files -m {} -s {} -sfp "
             "D(\d+).M.100.T.A -mfp D#ID#.M.100.T.[A-Z] -id 1 -rargs".format(
                 model_dir, system_dir))
 

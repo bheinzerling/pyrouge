@@ -2,7 +2,7 @@
 	<EVAL ID="1">
 		<MODEL-ROOT>data/models2</MODEL-ROOT>
 		<PEER-ROOT>data/systems2</PEER-ROOT>
-		<INPUT-FORMAT TYPE="SPL">
+		<INPUT-FORMAT TYPE="SEE">
 		</INPUT-FORMAT>
 		<PEERS>
 			<P ID="1">D30001.M.100.T.A</P>
@@ -17,7 +17,7 @@
 	<EVAL ID="2">
 		<MODEL-ROOT>data/models2</MODEL-ROOT>
 		<PEER-ROOT>data/systems2</PEER-ROOT>
-		<INPUT-FORMAT TYPE="SPL">
+		<INPUT-FORMAT TYPE="SEE">
 		</INPUT-FORMAT>
 		<PEERS>
 			<P ID="1">D30002.M.100.T.A</P>
@@ -32,7 +32,7 @@
 	<EVAL ID="3">
 		<MODEL-ROOT>data/models2</MODEL-ROOT>
 		<PEER-ROOT>data/systems2</PEER-ROOT>
-		<INPUT-FORMAT TYPE="SPL">
+		<INPUT-FORMAT TYPE="SEE">
 		</INPUT-FORMAT>
 		<PEERS>
 			<P ID="1">D30003.M.100.T.A</P>
@@ -47,7 +47,7 @@
 	<EVAL ID="4">
 		<MODEL-ROOT>data/models2</MODEL-ROOT>
 		<PEER-ROOT>data/systems2</PEER-ROOT>
-		<INPUT-FORMAT TYPE="SPL">
+		<INPUT-FORMAT TYPE="SEE">
 		</INPUT-FORMAT>
 		<PEERS>
 			<P ID="1">D30005.M.100.T.A</P>
