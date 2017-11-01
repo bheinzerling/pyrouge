@@ -161,7 +161,7 @@ To install pyrouge, run:
 
     pip install pyrouge
     
-If you have trouble installing pyrouge on Windows, please check `this guide by Frank Demoncourt <https://stackoverflow.com/questions/47045436/how-to-install-the-python-package-pyrouge-on-microsoft-windows/47045437#47045437>`_.
+If you have trouble installing pyrouge on Windows, please check `this guide by Franck Dernoncourt <https://stackoverflow.com/questions/47045436/how-to-install-the-python-package-pyrouge-on-microsoft-windows/47045437#47045437>`_.
 
 Assuming a working ROUGE-1.5.5. installation, tell pyrouge the ROUGE
 path with this command:
