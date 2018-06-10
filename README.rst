@@ -150,7 +150,7 @@ Installation
 ------------
 
 Instruction on installing ROUGE can be found
-`here <http://www.summarizerman.com/post/42675198985/figuring-out-rouge>`__.
+`here <https://web.archive.org/web/20171107220839/www.summarizerman.com/post/42675198985/figuring-out-rouge>`__.
 
 Depending on your system, you might have to run the following commands
 as root.
