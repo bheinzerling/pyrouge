@@ -334,9 +334,9 @@ class Rouge155(object):
         self.write_config(system_id=system_id)
         options = self.__get_options(rouge_args)
         command = [self._bin_path] + options
-        env = None
+        env = os.environ.copy()
         if hasattr(self, "_home_dir") and self._home_dir:
-            env = {'ROUGE_EVAL_HOME': self._home_dir}
+            env['ROUGE_EVAL_HOME'] = self._home_dir
         self.log.info(
             "Running ROUGE with command {}".format(" ".join(command)))
         rouge_output = check_output(command, env=env).decode("UTF-8")
